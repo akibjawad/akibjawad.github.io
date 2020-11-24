@@ -165,16 +165,19 @@
                     <div class="row section-separator">
                         <div class="mh-about-inner">
                             <h2 class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.1s">About Me</h2>
-                            <p class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">Hello, I'm Akib Jawad. A Computer enthusiast, Researcher, Software Engineer and a Philomath.
-                                Made myself graduated with a bachelor's degree from the Department of Computer Science & Engineering, Bangladesh University of Engineering and Technology (BUET). 
-                                Currently I'm working as a Software Engineer of Samsung R&D Institute Bangladesh. Aside from - even before - being a developer, I've been enquering into the world of Computer Science itself.
-                                My research area includes:
+                            <p class="wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">"Hello World", Akib Jawad here. A computer enthusiast, researcher, software engineer and a philomath.
+                                Graduated with a bachelor degree from the Department of Computer Science & Engineering, Bangladesh University of Engineering and Technology (BUET).
+                                This period of study includes having a deep dive into fundamental building blocks of computing elements, theories and implementations  of Computer Science. Following this 
+                                exploration comes a job of a Software Engineer of Samsung R&D Institute Bangladesh emphasizing in an active participation in both industrial research and
+                                development of end user applications/services. <br>
+                                In search of better understanding of some specific part of the subject, these research interests are currently being scrutinized over.
                             </p>
                             <div class="mh-about-tag wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s">
                                 <ul>
                                     <li><span>Computer Networking</span></li>
                                     <li><span>Secuirty</span></li>
                                     <li><span>Artifical Intelligence</span></li>
+                                    <li><span>IoT device communication</span></li>
                                     <li><span>Software Engineering</span></li>
                                 </ul>
                             </div>
@@ -641,27 +644,59 @@
                         <div class="col-sm-12 wow fadeInUp" id="mh-client-review" data-wow-duration="0.8s" data-wow-delay="0.3s">
                             <div class="each-client-item">
                                 <div class="mh-client-item dark-bg black-shadow-1">
-                                    <h4><a href="https://github.com/akibjawad/Movie-Recommendation-Sentiment-Analysis">Movie-Recommendation-Sentiment-Analysis</a></h4>
+                                    <h4><a href="https://github.com/akibjawad/Movie-Recommendation-Sentiment-Analysis">Movie-Recommendation sentiment analysis</a></h4>
                                     <p>
-                                        We tried to analyize sentiment of a movie recommendation by using LSTM & autoencoding techniques. Our goal was to 
-                                        classify a recommendation between 5 stages (very bad, bad, average, good, very good). We used keras for those NLP techniques.
-                                        As dataset we selected classified recommendations from IMDB dataset. To checked our implementaion both with previously trained dictionary
-                                        from google and training with our own neural network.
+                                        Classification of a movie recommendation to any of these 5 (very bad, bad, average, good, very good) catagories was the primary goal of this project.
+                                        Achieving this entails analysing sentiment of sentences correctly. A program was written on top of kers IMDB movie database which uses LSTM
+                                        to find out relationships among words in a sentence. Performance comparison was done by changing autoencodder layers & by modifying cross-validation methods.
+                                        
                                     </p>
                                 </div>
                             </div>
                             <div class="each-client-item">
                                 <div class="mh-client-item dark-bg black-shadow-1">
-                                    <h4><a href="https://github.com/akibjawad/A-Bootable-OS-with-nachos">Simulating-An-Operating-System-with-Nachos</a></h4>
+                                    <h4><a href="https://github.com/akibjawad/A-Bootable-OS-with-nachos">Writting an operating system with Nachos</a></h4>
                                     <p>
-                                        I tried to build a complete operating system which can compile any C/C++ code and run program in a simulated machine.
-                                        This operating system includes multithread support, along with paging mechanism to run system in a ultra low memory configuration. 
+                                        An attempt to build a complete operating system which can compile any C/C++ code and run program in a simulated machine.
+                                        This operating system includes multithread support along with paging mechanism to run system in a ultra low memory configuration. 
                                         Multithread support is managed with pThread library in c++, NFU algorithm was used for paging mechanism and Banker's Algorithm was used for resource allocation.
-                                        To built the project completely I used NachOS. 
+                                        These parts are written on top of NachOS.  
                                     </p>
                                 </div>
                             </div>                    
-                            
+                            <div class="each-client-item">
+                                <div class="mh-client-item dark-bg black-shadow-1">
+                                    <h4>Finding optimum path to avoid traffic by analysing crowd sourced data.</h4>
+                                    <p>
+                                        With the increase of smartphone usage while stuck in traffic, collecting traffic info from the crowd itself is an enticing idea.
+                                        Avoiding traditional automatic location tracking gives one oppurtunity to avoid secuirty violation and access to more structured data.
+                                        Hence this was an attempt to find the road with least traffic. In this two parts project, part one(Frontend) was built with google maps 
+                                        API for android phones while part two(Backend) was built with django(Python) for data analysis.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="each-client-item">
+                                <div class="mh-client-item dark-bg black-shadow-1">
+                                    <h4><a href="https://github.com/akibjawad/Compiler">An attempt to create a GCC clone with Flex and Bison</a></h4>
+                                    <p>
+                                        This experiment was to create a compiler which can compile a large subset C/C++ source code and generate assemply code. Symbol table was 
+                                        programmed in C++. Flex was used to create lexical analyser while semantic analysis was done with the help of Bison. Correctness of the programme was 
+                                        validated by running the output through an emu8086 assembler. 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="each-client-item">
+                                <div class="mh-client-item dark-bg black-shadow-1">
+                                    <h4><a href="https://github.com/akibjawad/Compiler">Trying-To-Create-A-GCC-Clone-With-Lex-and-YACC</a></h4>
+                                    <p>
+                                        I tried to build a compiler (a knock off GCC) which can generate x86 assembly code from C source code.<br>
+                                        I've implemented Symbol Table with C++. <br>
+                                        I Used Flex to complete lexical analysis and YACC to complete symantic analysis of the C source code. <br>
+                                        With the help of Symbol Table, Flex and YACC it could genrate assembly code in an ams file format.
+                                        Correctness of the assembly code was confirmed by running it on an emu8086 assembler.
+                                    </p>
+                                </div>
+                            </div>
                             <div class="each-client-item">
                                 <div class="mh-client-item dark-bg black-shadow-1">
                                     <h4><a href="https://github.com/akibjawad/Compiler">Trying-To-Create-A-GCC-Clone-With-Lex-and-YACC</a></h4>
