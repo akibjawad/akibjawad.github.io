@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "npm run build",
-    "deploy": "npm run build && gh-pages -d out"
+    // "predeploy": "npm run build",
+    // "deploy": "npm run build && gh-pages -d out"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.0.4",
