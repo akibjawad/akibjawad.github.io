@@ -11,7 +11,7 @@ export const DATA = {
     "A versatile software engineer, researcher, and passionate debugger with a hint of depth and details.",
   summary:
     "I am passionate about developing software systems that is usable to large number of users and developers. My work spans across the tech stack, from user applications to OS kernels, focusing on understanding the layers beneath APIs to create modular, efficient code. Recently, I completed Masters in Computer Science from Syracuse University in New York. During my master, I researched security of smart home systems and networking subsystem of Linux kernel. My research has been published in security conferences such as IEEE CNS and IEEE SecDev. Before Syracuse University, I worked as mobile application developer (iOS and Android) at Samsung Research.",
-  avatarUrl: "/me.png",
+  avatarUrl: "https://s3.us-west-2.amazonaws.com/portfolio.ajawad/portrait.jpg",
   bibfile: "/ref.bib",
   skills: [], //take skills from skillmap.tsx
   navbar: [
