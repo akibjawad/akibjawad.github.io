@@ -320,8 +320,7 @@ export const DATA = {
       image: "https://s3.us-west-2.amazonaws.com/portfolio.ajawad/firmware-fuzzing/firm-fuzz.png",
     },
   ],
-  hackathons: [
-  ],
+  hackathons: [],
   Awards: [
     {
       "title":"SRBD Icon of the Month",

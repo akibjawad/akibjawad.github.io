@@ -1,7 +1,8 @@
 // components/Publications.js
 "use client";
 import { useEffect, useState } from "react";
-import { PubCard } from "./pub-card";
+import { PubCard, PubCardProps} from "./pub-card";
+
 // import { loadBibFile } from "../lib/loadBibtex.js";
 
 // const traverseObject = (obj, depth = 0) => {
@@ -48,7 +49,7 @@ import { PubCard } from "./pub-card";
 // };
 
 const Publications = () => {
-  const [data, setData] = useState([]);
+  const [data, setData] = useState<PubCardProps[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -65,10 +66,11 @@ const Publications = () => {
   return (
     <div id="pubs">
         <ul className="bg-white, dark-invert">
-            {data.map((publication, index) => ( 
-                <PubCard type={publication.type}
+            {data && (data.map((publication, index) => ( 
+                <PubCard key={index}
+                    type={publication.type}
                     title={publication.title}
-                    authors={publication.author}
+                    authors={publication.authors}
                     year={publication.year}
                     booktitle={publication.booktitle? publication.booktitle:"NA"}
                     shortname={publication.shortname? publication.shortname:"NA"}
@@ -76,13 +78,14 @@ const Publications = () => {
                     issue={publication.issue? publication.issue:"NA"}
                     volume={publication.volume? publication.volume:"NA"}
                     location={publication.location? publication.location: "NA"}
-                    patentno={publication.PatentNo? publication.PatentNo:[]}
+                    patentno={publication.patentno? publication.patentno:[]}
                     publink={publication.publink? publication.publink: "#"}
-                    links={publication.link? publication.link: '#'}
+                    links={publication.links? publication.links: '#'}
                     pages={publication.pages? publication.pages:"NA"}
 
                 />
-            ))}
+            ))
+            )}
         </ul>
     </div>
   );
