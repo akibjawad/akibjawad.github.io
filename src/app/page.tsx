@@ -11,6 +11,7 @@ import Markdown from "react-markdown";
 import SkillTree from "@/components/skill-tree";
 import Publications from "@/components/publications";
 import { AwardCard } from "@/components/award-card";
+import { Icons } from "@/components/icons";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -225,20 +226,22 @@ export default function Page() {
               <div className="inline-block rounded-lg bg-foreground font-bold text-background px-3 py-1 text-2xl">
                 Contact
               </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                Get in Touch
-              </h2>
-              {/* <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm{" "}
-                <Link
-                  href={DATA.contact.social.X.url}
-                  className="text-blue-500 hover:underline"
-                >
-                  with a direct question on twitter
-                </Link>{" "}
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
-              </p> */}
+              <h3 className="text-xl font-semibold">
+                Feel free to contact me using any of these links. Let&apos;s have a cup of coffee and a deep discussion. 
+              </h3>
+              <div className="flex flex-col md:flex-row justify-center gap-5">
+                <Link href={"https://www.linkedin.com/in/akib-jawad"} target="_blank"> 
+                  <Icons.linkedin className="size-12"/>
+                </Link>
+                <Link href={"https://github.com/akibjawad"} target="_blank">
+                  <Icons.github className="size-12"/>
+                </Link>
+
+                <Link href={"mailto:example@example.com"} target="_blank">
+                  <Icons.email className="size-12"/>
+                </Link>
+                
+              </div>
             </div>
           </BlurFade>
         </div>
