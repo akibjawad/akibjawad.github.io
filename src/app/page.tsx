@@ -143,7 +143,7 @@ export default function Page() {
                   Some of my projects are closed source. These are the projects I worked on during my time at Samsung Research.
                   One of the project&apos;s website is publicly available 
                   <Link
-                    href="https://www.samsung.com/us/business/solutions/industries/healthcare/heartwise-healthcare-app/"
+                    href="https://www.samsung.com/us/business/solutions/industries/healthcare/heartwise-healthcare-app/" className="underline text-blue-400"
                   > Samsung Heartwise
                   </Link>. Most of my remaining project&apos;s are open source. Some of the most recent projects are mentioned here.
                 </p>
@@ -230,14 +230,14 @@ export default function Page() {
                 Feel free to contact me using any of these links. Let&apos;s have a cup of coffee and a deep discussion. 
               </h3>
               <div className="flex flex-col md:flex-row justify-center gap-5">
-                <Link href={"https://www.linkedin.com/in/akib-jawad"} target="_blank"> 
+                <Link href={"https://www.linkedin.com/in/anafis/"} target="_blank"> 
                   <Icons.linkedin className="size-12"/>
                 </Link>
                 <Link href={"https://github.com/akibjawad"} target="_blank">
                   <Icons.github className="size-12"/>
                 </Link>
 
-                <Link href={"mailto:example@example.com"} target="_blank">
+                <Link href={"mailto:a.j.nafis@gmail.com"} target="_blank">
                   <Icons.email className="size-12"/>
                 </Link>
                 

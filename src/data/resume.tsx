@@ -4,7 +4,7 @@ import { HomeIcon, icons, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Akib Jawad Nafis",
   initials: "AJN",
-  url: "https://dillion.io",
+  url: "https://akibjawad.github.io",
   location: "Syracuse, NY",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
@@ -30,7 +30,7 @@ export const DATA = {
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/akib-jawad/",
+        url: "https://www.linkedin.com/in/anafis",
         icon: Icons.linkedin,
         navbar: true,
       },
@@ -47,7 +47,7 @@ export const DATA = {
   work: [
     {
       company: "Syracuse University",
-      href: "https://atomic.finance",
+      href: "https://www.syracuse.edu",
       badges: ["Network Security", "Distributed Systems"],
       location: "Syracuse, NY, USA",
       title: "Graduate Research Assistant",
@@ -67,7 +67,7 @@ export const DATA = {
     {
       company: "Syracuse University",
       badges: ["Operating Systems"],
-      href: "https://shopify.com",
+      href: "https://www.syracuse.edu",
       location: "Syracuse, NY, USA",
       title: "Graduate Teaching Assistant",
       logoUrl: "/su.jpeg",
