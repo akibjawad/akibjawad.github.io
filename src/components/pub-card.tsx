@@ -41,8 +41,8 @@ export function PubCard({
         <div className="border border-gray-200 rounded-lg p-4 shadow-sm my-4">
           <h1 className="font-semibold text-xl"> {title} </h1>
           <h2 className="text-lg"> Authors: {authors} </h2>
-          <div className="flex items-center gap-2 justify-between">
-            <div className="flex items-center">
+          <div className="flex flex-col md:flex-row items-center gap-2 justify-between">
+            <div className="flex flex-col md:flex-row items-center">
               <span className="bg-green-100 dark:bg-green-900 rounded-lg px-2 py-1 text-lg font-bold">
                 Conference:
               </span>
@@ -67,8 +67,8 @@ export function PubCard({
         <div className="border border-gray-200 rounded-lg p-4 shadow-sm my-4">
           <h1 className="font-semibold text-xl"> {title} </h1>
           <h2 className="text-lg"> Authors: {authors} </h2>
-          <div className="flex items-center gap-2 justify-between">
-            <div className="flex items-center">
+          <div className="flex flex-col md:flex-row items-center gap-2 justify-between">
+            <div className="flex flex-col md:flex-row items-center">
               <span className="bg-green-100 dark:bg-green-900 rounded-lg px-2 py-1 text-lg font-bold">
                 Journal:
               </span>
@@ -91,10 +91,10 @@ export function PubCard({
   } else {
     return (
       <li key="title">
-        <div className="border border-gray-200 rounded-lg p-4 shadow-sm my-4 overflow-visible">
+        <div className="flex flex-col md:flex-row border border-gray-200 rounded-lg p-4 shadow-sm my-4 overflow-visible">
           <h1 className="font-semibold text-xl"> {title} </h1>
           <h2 className="text-lg"> Authors: {authors} </h2>
-          <div className="flex items-center gap-2 justify-center">
+          <div className="flex flex-col md:flex-row items-center gap-2 justify-center">
               {patentno.map((patent, index) => (
                 <span key={index} className="bg-green-100 dark:bg-green-900 rounded-lg px-2 py-1 text-lg font-bold">
                   <Link href={links} target="_blank" className="justify-right text-lg font-bold" >

@@ -324,22 +324,23 @@ export const DATA = {
   Awards: [
     {
       "title":"SRBD Icon of the Month",
-      "time": "JUN 2020"
+      "dates": "JUN 2020",
+      "description":`Awarded for debugging a concurrency issue
+      in the Samsung Heartwise mobile (both iOS and Android) Application.`
     },
     {
       "title": "Runner-Up: Research Presentation",
-      "institute": "Syracuse University",
-      "event": "ECS Research Day",
-      "time":"APR 2023",
-      "image":""
+      "description": `Awared for presenting my research on IoT security at
+      ECS Research Day, Syracuse University`,
+      "dates":"APR 2023",
+      "image":"",
+      "link":"#"
     },
     {
       "tilte": "NSF Student Travel Grant",
-      "event": "IEEE Conference on Communication and Security",
-      "time": "OCT 2023"
-    },
-    {
-      "title": "Solved over 200 leetcode problems"
+      "description": `Awarded student travel grant to subsidize the cost of attending
+      IEEE Conference on Communication and Security(CNS) at FL,USA.`,
+      "dates": "OCT 2023"
     }
   ],
 

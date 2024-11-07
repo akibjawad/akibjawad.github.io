@@ -59,7 +59,7 @@ const SkillNode: React.FC<SkillNodeProps> = ({ label, skills }) => {
 };
 
 const SkillTree: React.FC = () => (
-    <div className="flex flex-row mx-auto">
+    <div className="flex flex-col md:flex-row mx-auto">
     {Object.entries(skillData).map(([domain, skills]) => (
         // <div className=''
         // <Badge key={domain}>{domain}</Badge>
