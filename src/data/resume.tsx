@@ -12,6 +12,7 @@ export const DATA = {
   summary:
     "I am passionate about developing software systems that is usable to large number of users and developers. My work spans across the tech stack, from user applications to OS kernels, focusing on understanding the layers beneath APIs to create modular, efficient code. Recently, I completed Masters in Computer Science from Syracuse University in New York. During my master, I researched security of smart home systems and networking subsystem of Linux kernel. My research has been published in security conferences such as IEEE CNS and IEEE SecDev. Before Syracuse University, I worked as mobile application developer (iOS and Android) at Samsung Research.",
   avatarUrl: "/me.png",
+  bibfile: "/ref.bib",
   skills: [], //take skills from skillmap.tsx
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -321,8 +322,26 @@ export const DATA = {
   ],
   hackathons: [
   ],
-  Publications: [],
-  Patents: [],
-  Awards: []
+  Awards: [
+    {
+      "title":"SRBD Icon of the Month",
+      "time": "JUN 2020"
+    },
+    {
+      "title": "Runner-Up: Research Presentation",
+      "institute": "Syracuse University",
+      "event": "ECS Research Day",
+      "time":"APR 2023",
+      "image":""
+    },
+    {
+      "tilte": "NSF Student Travel Grant",
+      "event": "IEEE Conference on Communication and Security",
+      "time": "OCT 2023"
+    },
+    {
+      "title": "Solved over 200 leetcode problems"
+    }
+  ],
 
 } as const;

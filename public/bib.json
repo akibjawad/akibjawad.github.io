@@ -1,0 +1,48 @@
+[
+    {
+        "type":"Conference",
+        "title":"VetIoT: On Vetting IoT Defenses Enforcing Policies at Runtime",
+        "author":"Akib Jawad Nafis, Omar Chowdhury, and Endadul Hoque",
+        "booktitle":"2023 IEEE Conference on Communications and Network Security",
+        "shortname": "CNS",
+        "location": "FL, USA",
+        "pages":"1-9",
+        "year":"2023",
+        "publink":"https://cns2023.ieee-cns.org",
+        "link":"https://arxiv.org/pdf/2308.12417"
+    },
+    {
+        "type":"Conference",
+        "title":"iConPAL: LLM-guided Policy Authoring Assistant for Configuring IoT Defenses",
+        "author":"Mahbub Alam, Siwei Zhang, Eric Rodriguez, Akib Nafis, and Endadul Hoque",
+        "shortname": "SecDev",
+        "booktitle":"2024 IEEE Secure Development Conference",
+        "pages":"76-92",
+        "year":"2024",
+        "location":"PA, USA",
+        "publink":"https://secdev.ieee.org/2024/home",
+        "link":"https://endadul.github.io/pubs/iconpal-secdev-24.pdf"
+    },
+    {
+        "type": "Journal",
+        "author": "Md Sadiqur Rahman Sohel, Chowdhury Nawrin Ferdous, Ashikur Rahman, Akib Jawad Nafis, Salsabil Arabi Shushmi, and Raqeebir Rab",
+        "title": "On constructing contention aware connected dominating sets for inter-connectivity among internet of things devices", 
+        "journal":"International Journal of Multimedia Intelligence and Security",
+        "shortname":"IJMIS",
+        "location":"Geneva, Switzerland",
+        "publink":"https://www.inderscienceonline.com/doi/abs/10.1504/IJMIS.2019.104795",
+        "issue": "3",
+        "volume": "3",
+        "year":"2019", 
+        "pages":"244–270",
+        "link":"https://d1wqtxts1xzle7.cloudfront.net/99463979/ijmis.2019.10479520230306-1-c68bdh-libre.pdf?1678068346=&response-content-disposition=inline%3B+filename%3DOn_constructing_contention_aware_connect.pdf&Expires=1730832134&Signature=J7ILd57ZTxqR9KNIvsG~vOpXoouXK84PhdowNpXFYLy1h8HN3HmqBG83oKHM9xslJ4BFXqrmYVzy7t9xLG3K2IvguJYEj4zHGDEQtASOeitLOIgux4n5dYK7Z2K3QcZcEk9jk6DjJUBVWHOtWhCoJlqeXL5EuCtH75Su~eKr~KgxmAula23rXpj8u1LCNEkekROC05lxRmfAUMDjeHTSPDy7CNqpoBSWokojzkpdCbuPjH~uN8Al3j4i8vxje6peDhyASnKiwR3VTbpaQtyJ4zEavK0L7mcjNPxnj-xI0tHqf4d6q6FyHYxc3CyN4fklYHDMZdbSctJRPoqFsk2U3w__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA"
+    }, 
+    {
+        "type": "Patent",
+        "title": "Wearable device and controlling method thereof",
+        "author": "Imran Khan RAHAT, Anirudha PAUL, and Akib Jawad NAFIS",
+        "PatentNo": ["WIPO: WO2022265214A1", "USPTO: US20240005616A1"],
+        "year": "2022",
+        "link":"https://patents.google.com/patent/US20240005616A1/en?oq=WO2022265214A1"
+    }
+]
