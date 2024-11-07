@@ -65,7 +65,7 @@ const Publications = () => {
 
   return (
     <div id="pubs">
-        <ul className="bg-white, dark-invert">
+        <ul className="bg-white, w-full">
             {data && (data.map((publication, index) => ( 
                 <PubCard key={index}
                     type={publication.type}
