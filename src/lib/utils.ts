@@ -1,5 +1,7 @@
 import { type ClassValue, clsx } from "clsx";
 import { twMerge } from "tailwind-merge";
+// import fs from 'fs'
+// import path from "path";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -35,3 +37,29 @@ export function formatDate(date: string) {
     return `${fullDate} (${yearsAgo}y ago)`;
   }
 }
+
+// export const readJsonFile = async (filePath: string): Promise<any> => {
+//   try {
+//     // Resolve the absolute path
+//     const absolutePath = path.resolve(filePath);
+
+//     // Check if the file exists
+//     if (!fs.existsSync(absolutePath)) {
+//       console.log(`File does not exist at path: ${absolutePath}`);
+//       return null;
+//     }
+
+//     // Read the file asynchronously
+//     const data = await fs.promises.readFile(absolutePath, 'utf-8');
+
+//     // Parse and return the JSON content
+//     return JSON.parse(data);
+//   } catch (error) {
+//     console.error(`Error reading or parsing JSON file: ${error}`);
+//     return null;
+//   }
+// };
+
+
+
+

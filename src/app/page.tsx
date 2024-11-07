@@ -9,7 +9,7 @@ import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import SkillTree from "@/components/skill-tree";
-import skillData from "@/data/skillmap";
+import Publications from "@/components/publications";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -101,7 +101,7 @@ export default function Page() {
       </section>
       <section id="skills">
         <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <h2 className="text-2xl font-bold">Skill Map</h2>
+            <h2 className="text-2xl font-bold">Skill Map</h2> 
         </BlurFade>
         <div className="flex flex-row space-x-2">
           
@@ -170,29 +170,19 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="hackathons">
+      <section id="acomplishments">
         <div className="space-y-12 w-full py-12">
-          {/* <BlurFade delay={BLUR_FADE_DELAY * 13}>
+          <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  Hackathons
+                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-2xl font-bold">
+                  Publications
                 </div>
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  I like building things
-                </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  During my time in university, I attended{" "}
-                  {DATA.hackathons.length}+ hackathons. People from around the
-                  country would come together and build incredible things in 2-3
-                  days. It was eye-opening to see the endless possibilities
-                  brought to life by a group of motivated and passionate
-                  individuals.
-                </p>
               </div>
             </div>
-          </BlurFade> */}
-          {/* <BlurFade delay={BLUR_FADE_DELAY * 14}>
+          </BlurFade>
+          <Publications/>
+          <BlurFade delay={BLUR_FADE_DELAY * 14}>
             <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
               {DATA.hackathons.map((project, id) => (
                 <BlurFade
@@ -210,7 +200,7 @@ export default function Page() {
                 </BlurFade>
               ))}
             </ul>
-          </BlurFade> */}
+          </BlurFade>
         </div>
       </section>
       <section id="contact">
