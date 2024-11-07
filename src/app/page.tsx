@@ -10,6 +10,7 @@ import Link from "next/link";
 import Markdown from "react-markdown";
 import SkillTree from "@/components/skill-tree";
 import Publications from "@/components/publications";
+import { AwardCard } from "@/components/award-card";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -181,33 +182,47 @@ export default function Page() {
               </div>
             </div>
           </BlurFade>
-          <Publications/>
-          {/* <BlurFade delay={BLUR_FADE_DELAY * 14}>
-            <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-              {DATA.hackathons.map((project, id) => (
+          <BlurFade delay={BLUR_FADE_DELAY * 14}>
+            <Publications/>
+          </BlurFade>
+        </div>
+      </section>
+      <section id="award">
+        <div className="space-y-12 w-full py-12">
+          <BlurFade delay={BLUR_FADE_DELAY * 13}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-2xl font-bold">
+                  Honors And Awards
+                </div>
+              </div>
+            </div>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 14}>
+            <ul className="flex-row divide-y divide-dashed border-l">
+              {DATA.awards.map((award, id) => (
                 <BlurFade
-                  key={project.title + project.dates}
+                  key={award.title + award.dates}
                   delay={BLUR_FADE_DELAY * 15 + id * 0.05}
                 >
-                  <HackathonCard
-                    title={project.title}
-                    description={project.description}
-                    location={project.location}
-                    dates={project.dates}
-                    image={project.image}
-                    links={project.links}
+                  <AwardCard
+                    title={award.title}
+                    description={award.description}
+                    dates={award.dates}
+                    image={award.image? award.image :"#"}
+                    links={award.links? award.links :[]}
                   />
                 </BlurFade>
               ))}
             </ul>
-          </BlurFade> */}
+          </BlurFade>
         </div>
       </section>
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <div className="space-y-3">
-              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+              <div className="inline-block rounded-lg bg-foreground font-bold text-background px-3 py-1 text-2xl">
                 Contact
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">

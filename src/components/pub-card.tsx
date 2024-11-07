@@ -91,7 +91,7 @@ export function PubCard({
   } else {
     return (
       <li key="title">
-        <div className="flex flex-col md:flex-row border border-gray-200 rounded-lg p-4 shadow-sm my-4 overflow-visible">
+        <div className="flex-row border border-gray-200 rounded-lg p-4 shadow-sm my-4 overflow-visible">
           <h1 className="font-semibold text-xl"> {title} </h1>
           <h2 className="text-lg"> Authors: {authors} </h2>
           <div className="flex flex-col md:flex-row items-center gap-2 justify-center">

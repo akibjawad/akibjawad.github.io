@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon, icons, NotebookIcon } from "lucide-react";
 
 export const DATA = {
   name: "Akib Jawad Nafis",
@@ -321,26 +321,36 @@ export const DATA = {
     },
   ],
   hackathons: [],
-  Awards: [
+  awards: [
     {
       "title":"SRBD Icon of the Month",
       "dates": "JUN 2020",
-      "description":`Awarded for debugging a concurrency issue
-      in the Samsung Heartwise mobile (both iOS and Android) Application.`
+      "description":`Awarded for identifying and resolving a concurrency issue
+      in the Samsung Heartwise mobile (both iOS and Android) Application.`,
+      "image":"#",
+      "links":[]
     },
     {
       "title": "Runner-Up: Research Presentation",
-      "description": `Awared for presenting my research on IoT security at
+      "description": `Awarded for presenting my research on IoT security at
       ECS Research Day, Syracuse University`,
-      "dates":"APR 2023",
-      "image":"",
-      "link":"#"
+      "dates":"MAR 2023",
+      "image":"https://s3.us-west-2.amazonaws.com/portfolio.ajawad/awards/ecs.png",
+      "links":[
+        {
+          title:"ECS Research Day 2023 Awards",
+          icon: <Icons.globe className="size-3" />,
+          href:"https://ecs.syracuse.edu/about/news/2023-engineering-and-computer-science-research-day-award-winners-announced"
+        }
+      ]
     },
     {
-      "tilte": "NSF Student Travel Grant",
-      "description": `Awarded student travel grant to subsidize the cost of attending
+      "title": "NSF Student Travel Grant",
+      "description": `Awarded student travel grant to present my research on IoT security at the
       IEEE Conference on Communication and Security(CNS) at FL,USA.`,
-      "dates": "OCT 2023"
+      "dates": "OCT 2023",
+      "image":"#",
+      "links":[]
     }
   ],
 
