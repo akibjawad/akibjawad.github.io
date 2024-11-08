@@ -82,7 +82,7 @@ export const DATA = {
     {
       company: "Samsung R&D Institute Bangladesh",
       href: "https://research.samsung.com/srbd",
-      badges: [],
+      badges: ["iOS & Android Development", "Embedded Linux"],
       location: "Dhaka, Bangladesh",
       title: "Software Engineer",
       logoUrl: "/sr.jpeg",
