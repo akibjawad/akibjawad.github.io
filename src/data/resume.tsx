@@ -48,6 +48,21 @@ export const DATA = {
     {
       company: "Syracuse University",
       href: "https://www.syracuse.edu",
+      badges: ["LLM Security", "AI safety"],
+      location: "Syracuse, NY, USA",
+      title: "Research Intern",
+      logoUrl: "/su.jpeg",
+      start: "Nov 2024",
+      end: "Present",
+      description:
+        `My primary contribution can be summarized by the phrase \"researching explainablity and security of LLMs\".
+        I worked on representation engineering, a method to observe and control behavior of LLMs as they generate responses.
+        Using representation engineering, my goal was to reduce harmfull response generation of LLMs by finetuning foundational LLMs such as Mistral, and Lamma.
+        `,
+    },
+    {
+      company: "Syracuse University",
+      href: "https://www.syracuse.edu",
       badges: ["Network Security", "Distributed Systems"],
       location: "Syracuse, NY, USA",
       title: "Graduate Research Assistant",
