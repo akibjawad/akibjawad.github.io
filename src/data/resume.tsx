@@ -143,10 +143,10 @@ export const DATA = {
       that limits harmful response generation in LLMs.
       Circuit breaker defend against harmful prompts by fine-tuning LLMs to not generate any harmful token.
       I implemented embedding space attack to bypass the defense of circuit breaker and force LLMs to generate harmful responses.
-      LLMs recognize prompts by observing the corresponsding embedding matrix for that prompt. 
-      Given a harmful prompt, I developed programs to find an embedding matrix of the prompt that can trick circuit breaker tuned LLM to not consider the prompt as harmful.
+      LLMs recognize hamrful prompts by observing the corresponsding embedding matrix for that prompt. 
+      Given a harmful prompt, I developed programs to find an embedding matrix that can trick circuit breaker tuned LLM to not consider the prompt as harmful.
       `,
-      technologies:['Pytorch', 'Huggingface', 'vLLM', 'Cuda', 'Text-Embedding', 'Fine-tuning LLMs'],
+      technologies:['Pytorch', 'Huggingface', 'vLLM', 'Cuda', 'Text-Embedding', 'Fine-tuning LLMs', 'OpenAIAPI', 'Judge LLM'],
       links: [
         {
           type: "Github",
@@ -155,7 +155,7 @@ export const DATA = {
         },
         {
           type: "Project Report",
-          href: "https://github.com/akibjawad/circuit-breaker-report/blob/main/attacking_circuit_breaker.pdf",
+          href: "https://s3.us-west-2.amazonaws.com/portfolio.ajawad/breaking-circuit-breaker/attacking_circuit_breaker.pdf",
           icon: <Icons.globe className="size-3" />,
         },
       ]
