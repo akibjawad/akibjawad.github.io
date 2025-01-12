@@ -146,7 +146,7 @@ export const DATA = {
       LLMs recognize hamrful prompts by observing the corresponsding embedding matrix for that prompt. 
       Given a harmful prompt, I developed programs to find an embedding matrix that can trick circuit breaker tuned LLM to not consider the prompt as harmful.
       `,
-      technologies:['Pytorch', 'Huggingface', 'vLLM', 'Cuda', 'Text-Embedding', 'Fine-tuning LLMs', 'OpenAIAPI', 'Judge LLM'],
+      technologies:['Pytorch', 'Huggingface', 'vLLM', 'Cuda', 'OpenAIAPI'],
       links: [
         {
           type: "Github",
@@ -158,7 +158,9 @@ export const DATA = {
           href: "https://s3.us-west-2.amazonaws.com/portfolio.ajawad/breaking-circuit-breaker/attacking_circuit_breaker.pdf",
           icon: <Icons.globe className="size-3" />,
         },
-      ]
+      ],
+      image:'https://s3.us-west-2.amazonaws.com/portfolio.ajawad/breaking-circuit-breaker/breaking-circuit-breaker.png',
+
     },
     {
       title: "VetIoT",
