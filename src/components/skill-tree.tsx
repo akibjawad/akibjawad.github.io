@@ -18,7 +18,7 @@ interface SkillNodeProps {
 }
 
 const SkillNode: React.FC<SkillNodeProps> = ({ label, skills }) => {
-  const [expanded, setExpanded] = useState(true);
+  const [expanded, setExpanded] = useState(false);
 
   const toggleExpand = () => setExpanded(!expanded);
 
