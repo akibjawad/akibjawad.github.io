@@ -162,7 +162,7 @@ export const DATA = {
       subtitle: "Core Library Contributor",
       href: "https://github.com/huggingface/transformers",
       technologies: ["Python", "AI/ML", "Multi-modal", "VLM", "Transformers"],
-      period: "May 2025 - Aug 2025",
+      dates: "May 2025 - Aug 2025",
       description: `Contributed to the multi-modal chat_template processing pipeline and video pre-processing pipeline. 
       Enhanced test-suite for Vision Language Models (VLMs) including InternVL and QWEN2 family of VLMs. 
       Improved the library's capabilities for handling video and image-text interactions.`,
