@@ -12,7 +12,7 @@ export const DATA = {
     "A versatile software engineer, researcher, and passionate debugger with a hint of depth and details.",
   summary:
     `I developed both user facing applications and libraries that are used by other developers.
-    Up until now, Contributed to the Hugging Face Transformers Library,
+    Up until now, I contributed to the Hugging Face Transformers Library,
     developed Bluetooth Low Energy (BLE) protocols to speed up communication between smartwatches and smartphones,
     and developed Python Library to test security solutions for IoT systems (or any distributed systems using security policy enforcement).
     Working at library layers made me adaptable to work with any programming language or framework swiftly and create tangible impact.
@@ -56,6 +56,20 @@ export const DATA = {
 
   work: [
     {
+      company: "TechX Labs",
+      href: "https://techx.dev",
+      badges: ["Open Source Contribution", "Hugging Face Transformers"],
+      location: "Jersey City, NJ, USA",
+      title: "AI/ML Engineer",
+      logoUrl: "/techx.png",
+      start: "May 2025",
+      end: "Aug 2025",
+      description:
+        `I contributed to the multi-modal chat_template processing pipeline and video pre-processing pipeline of the Hugging Face Transformers library.
+        I also contributed to the test-suite of Vision Language Models (VLMs) including InternVL, QWEN2 family of VLMs.
+        `,
+    },
+    {
       company: "Syracuse University",
       href: "https://www.syracuse.edu",
       badges: ["LLM Security", "AI safety"],
@@ -63,7 +77,7 @@ export const DATA = {
       title: "Research Intern",
       logoUrl: "/su.jpeg",
       start: "Nov 2024",
-      end: "Present",
+      end: "July 2025",
       description:
         `My primary contribution can be summarized by the phrase \"researching explainablity and security of LLMs\".
         I worked on representation engineering, a method to observe and control behavior of LLMs as they generate responses.
