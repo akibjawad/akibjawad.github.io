@@ -11,7 +11,16 @@ export const DATA = {
   description:
     "A versatile software engineer, researcher, and passionate debugger with a hint of depth and details.",
   summary:
-    "I am passionate about developing software systems that is usable to large number of users and developers. My work spans across the tech stack, from user applications to OS kernels, focusing on understanding the layers beneath APIs to create modular, efficient code. Recently, I completed Masters in Computer Science from Syracuse University in New York. During my master, I researched security of smart home systems and networking subsystem of Linux kernel. My research has been published in security conferences such as IEEE CNS and IEEE SecDev. Before Syracuse University, I worked as mobile application developer (iOS and Android) at Samsung Research.",
+    `I developed both user facing applications and libraries that are used by other developers.
+    Up until now, Contributed to the Hugging Face Transformers Library,
+    developed Bluetooth Low Energy (BLE) protocols to speed up communication between smartwatches and smartphones,
+    and developed Python Library to test security solutions for IoT systems (or any distributed systems using security policy enforcement).
+    Working at library layers made me adaptable to work with any programming language or framework swiftly and create tangible impact.
+    Additionally, I developed a strong interest in digging deep into the system layer and find vulnerabilities in the system.
+    I have worked extensively in the networking subsystem of Linux, AI/ML systems, distributed systems with a focus on safety and security.
+    My security research has been published in IEEE CNS, and SecDev, and one of my poster is also published at USENIX security.
+    Recently, I completed Masters in Computer Science from Syracuse University in New York.
+    Before Syracuse University, I worked at Samsung Research.`,
   avatarUrl: "https://s3.us-west-2.amazonaws.com/portfolio.ajawad/portrait.jpg",
   bibfile: "/ref.bib",
   skills: [], //take skills from skillmap.tsx
