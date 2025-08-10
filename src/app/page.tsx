@@ -127,9 +127,48 @@ export default function Page() {
           </div> */}
         </div>
       </section>
-      <section id="projects">
+      <section id="open-source">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-2xl">
+                  Open Source
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  My Open Source Contributions
+                </h2>
+                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  I actively contribute to open source projects, focusing on AI/ML libraries, security tools, and networking frameworks. 
+                  These contributions help me stay connected with the developer community and improve software that benefits everyone.
+                </p>
+              </div>
+            </div>
+          </BlurFade>
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-3 mx-auto">
+            {DATA.openSourceContributions.map((contribution, id) => (
+              <BlurFade
+                key={contribution.title}
+                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+              >
+                <ProjectCard
+                  href={contribution.href}
+                  key={contribution.title}
+                  title={contribution.title}
+                  description={contribution.description}
+                  dates={contribution.dates}
+                  tags={contribution.technologies}
+                  image={contribution.image}
+                  links={contribution.links}
+                />
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <div className="space-y-12 w-full py-12">
+          <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-2xl">
@@ -154,7 +193,7 @@ export default function Page() {
             {DATA.projects.map((project, id) => (
               <BlurFade
                 key={project.title}
-                delay={BLUR_FADE_DELAY * 12 + id * 0.05}
+                delay={BLUR_FADE_DELAY * 14 + id * 0.05}
               >
                 <ProjectCard
                   href={project.href}
@@ -174,7 +213,7 @@ export default function Page() {
       </section>
       <section id="acomplishments">
         <div className="space-y-12 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 13}>
+          <BlurFade delay={BLUR_FADE_DELAY * 15}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-2xl font-bold">
@@ -183,14 +222,14 @@ export default function Page() {
               </div>
             </div>
           </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 14}>
+          <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <Publications/>
           </BlurFade>
         </div>
       </section>
       <section id="award">
         <div className="space-y-12 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 13}>
+          <BlurFade delay={BLUR_FADE_DELAY * 17}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-2xl font-bold">
@@ -199,12 +238,12 @@ export default function Page() {
               </div>
             </div>
           </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 14}>
+          <BlurFade delay={BLUR_FADE_DELAY * 18}>
             <ul className="flex-row divide-y divide-dashed border-l">
               {DATA.awards.map((award, id) => (
                 <BlurFade
                   key={award.title + award.dates}
-                  delay={BLUR_FADE_DELAY * 15 + id * 0.05}
+                  delay={BLUR_FADE_DELAY * 19 + id * 0.05}
                 >
                   <AwardCard
                     title={award.title}
@@ -221,7 +260,7 @@ export default function Page() {
       </section>
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 16}>
+          <BlurFade delay={BLUR_FADE_DELAY * 20}>
             <div className="space-y-3">
               <div className="inline-block rounded-lg bg-foreground font-bold text-background px-3 py-1 text-2xl">
                 Contact

@@ -156,34 +156,65 @@ export const DATA = {
       end: "2019",
     }
   ],
-  projects: [
+  openSourceContributions: [
     {
-      title: "Breaking circuit breakers",
-      href: "https://github.com/akibjawad/circuit-breakers",
-      dates: "Nov 2024 - Jan 2025",
-      active: true,
-      description: `In this project, I implemented attacks against a defense mechanism, named circuit breaker,
-      that limits harmful response generation in LLMs.
-      Circuit breaker defend against harmful prompts by fine-tuning LLMs to not generate any harmful token.
-      I implemented embedding space attack to bypass the defense of circuit breaker and force LLMs to generate harmful responses.
-      LLMs recognize hamrful prompts by observing the corresponsding embedding matrix for that prompt. 
-      Given a harmful prompt, I developed programs to find an embedding matrix that can trick circuit breaker tuned LLM to not consider the prompt as harmful.
-      `,
-      technologies:['Pytorch', 'Huggingface', 'vLLM', 'Cuda', 'OpenAIAPI'],
+      title: "Hugging Face Transformers",
+      subtitle: "Core Library Contributor",
+      href: "https://github.com/huggingface/transformers",
+      technologies: ["Python", "AI/ML", "Multi-modal", "VLM", "Transformers"],
+      period: "May 2025 - Aug 2025",
+      description: `Contributed to the multi-modal chat_template processing pipeline and video pre-processing pipeline. 
+      Enhanced test-suite for Vision Language Models (VLMs) including InternVL and QWEN2 family of VLMs. 
+      Improved the library's capabilities for handling video and image-text interactions.`,
+      // image: "https://huggingface.co/front/assets/huggingface_logo.svg",
+      image: "https://s3.us-west-2.amazonaws.com/portfolio.ajawad/transformers-contribution/huggingface_logo-noborder.png",
       links: [
         {
-          type: "Github",
-          href: "https://github.com/akibjawad/circuit-breakers",
+          type: "PR Link",
+          href: "https://github.com/huggingface/transformers/pull/39494",
           icon: <Icons.github className="size-3" />,
         },
         {
-          type: "Project Report",
-          href: "https://s3.us-west-2.amazonaws.com/portfolio.ajawad/breaking-circuit-breaker/attacking_circuit_breaker.pdf",
+          type: "Slide Deck",
+          href: "https://s3.us-west-2.amazonaws.com/portfolio.ajawad/transformers-contribution/huggingface_contribution.pptx",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Video Playback",
+          href: "https://www.linkedin.com/posts/anafis_firstabropenabrsourceabrcontribution-activity-7358521488821440514-ZIRe?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACVbOdUBL54VTHvTkAeZ6atZvjyelwDQfrs",
+          icon: <Icons.linkedin className="size-3" />,
+        }
+      ],
+    },
+    {
+      title: "Software Defined Networking (SDN) Emulator",
+      href: "https://seedsecuritylabs.org/emulator/",
+      dates: "Jan 2024 - Present",
+      active: true,
+      description:
+        `SEED Emulator is a python framework that emulates operations of a real world internet. I am developing a module of the emulator which emulates
+        oeprations of the SDN. In my implementation, I am using faucet (formarly known as RYU) as SDN controller and OpenVSwitch as virtual sdn enabled switch. 
+        `,
+      technologies: [
+        "SDN Controller",
+        "BGP",
+        "OpenVSwitch",
+        "Python",
+        "Docker",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/seed-labs/seed-emulator/tree/master/experiments/sdn/initial-exp",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Slide Deck",
+          href: "https://s3.us-west-2.amazonaws.com/portfolio.ajawad/sdn/sdn.pptx",
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image:'https://s3.us-west-2.amazonaws.com/portfolio.ajawad/breaking-circuit-breaker/breaking-circuit-breaker.png',
-
+      image: "https://s3.us-west-2.amazonaws.com/portfolio.ajawad/sdn/sdn.png",
     },
     {
       title: "VetIoT",
@@ -227,60 +258,72 @@ export const DATA = {
       ],
       image: "https://s3.us-west-2.amazonaws.com/portfolio.ajawad/vetiot/vetiot.png",
     },
+  ],
+  projects: [
     {
-      title: "Software Defined Networking (SDN) Emulator",
-      href: "https://seedsecuritylabs.org/emulator/",
-      dates: "Jan 2024 - Present",
+      title: "Breaking circuit breakers",
+      href: "https://github.com/akibjawad/circuit-breakers",
+      dates: "Nov 2024 - Jan 2025",
       active: true,
-      description:
-        `SEED Emulator is a python framework that emulates operations of a real world internet. I am developing a module of the emulator which emulates
-        oeprations of the SDN. In my implementation, I am using faucet (formarly known as RYU) as SDN controller and OpenVSwitch as virtual sdn enabled switch. 
-        `,
-      technologies: [
-        "SDN Controller",
-        "BGP",
-        "OpenVSwitch",
-        "Python",
-        "Docker",
-      ],
+      // description: `In this project, I implemented attacks against a defense mechanism, named circuit breaker,
+      // that limits harmful response generation in LLMs.
+      // Circuit breaker defend against harmful prompts by fine-tuning LLMs to not generate any harmful token.
+      // I implemented embedding space attack to bypass the defense of circuit breaker and force LLMs to generate harmful responses.
+      // LLMs recognize hamrful prompts by observing the corresponsding embedding matrix for that prompt. 
+      // Given a harmful prompt, I developed programs to find an embedding matrix that can trick circuit breaker tuned LLM to not consider the prompt as harmful.
+      // `,
+      description: `Implemented embedding space attacks to bypass circuit breaker defense mechanisms in LLMs. 
+      Developed programs that find embedding matrices to trick fine-tuned LLMs into not recognizing harmful prompts, 
+      forcing them to generate harmful responses despite safety measures.`,
+      technologies:['Pytorch', 'Transformers', 'LLM', 'OpenAIAPI'],
       links: [
         {
-          type: "Source",
-          href: "https://github.com/seed-labs/seed-emulator/tree/master/experiments/sdn/initial-exp",
+          type: "Github",
+          href: "https://github.com/akibjawad/circuit-breakers",
           icon: <Icons.github className="size-3" />,
         },
         {
-          type: "Slide Deck",
-          href: "https://s3.us-west-2.amazonaws.com/portfolio.ajawad/sdn/sdn.pptx",
+          type: "Project Report",
+          href: "https://s3.us-west-2.amazonaws.com/portfolio.ajawad/breaking-circuit-breaker/attacking_circuit_breaker.pdf",
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "https://s3.us-west-2.amazonaws.com/portfolio.ajawad/sdn/sdn.png",
+      image:'https://s3.us-west-2.amazonaws.com/portfolio.ajawad/breaking-circuit-breaker/breaking-circuit-breaker.png',
+
     },
     {
-      title: "Full Stack Project Management Website",
-      href: "https://llm.report",
-      dates: "Jul 2024 - Jul 2024",
+      title: "Discovering remote code execution (RCE) bugs in Wifi/Bluetooth combo firmware",
+      href: "https://github.com/akibjawad/frankenstein-report",
+      dates: "Sep 2021 - Dec 2021",
       active: false,
       description:
-        `Developed a Full-stack (front-end: React, Backend: Django) website with complete authentication and deployed it in AWS with apropriate scalability.
+        `Broadcom Wifi/Bluetooth combo chip is used in many smartphones and laptops including iPhones, Samsung phones, and Macbooks.
+        In this project, I emulated the firmware of the combo chip using qemu and fuzzed the firmware with randomly generated bluetooth packets.
+        During fuzzing I found 2 CVEs: one crashing the firmware and another creating heap corruption error.
         `,
       technologies: [
-        "React.js",
-        "Django",
-        "PostgreSQL",
-        "Nginx",
-        "AWS EC2",
-        "AWS S3",
+        "QEMU",
+        "Wireless Firmware Fuzzing",
+        "Linux Bluetooth Stack",
       ],
       links: [
         {
           type: "Source",
-          href: "https://github.com/akibjawad/django-react",
+          href: "https://github.com/akibjawad/predict-flight-landing",
           icon: <Icons.github className="size-3" />,
         },
+        {
+          type: "Project Report",
+          href: "https://s3.us-west-2.amazonaws.com/portfolio.ajawad/firmware-fuzzing/main.pdf",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Slide Deck",
+          href: "https://s3.us-west-2.amazonaws.com/portfolio.ajawad/firmware-fuzzing/Project-Proposal-Frankenstein.pptx",
+          icon: <Icons.globe className="size-3" />
+        }
       ],
-      image: "https://s3.us-west-2.amazonaws.com/portfolio.ajawad/react-django/dep-arch.png",
+      image: "https://s3.us-west-2.amazonaws.com/portfolio.ajawad/firmware-fuzzing/firm-fuzz.png",
     },
     {
       title: "Testing VPNs against leaking tunnel attack",
@@ -351,40 +394,30 @@ export const DATA = {
       ],
       image: "https://s3.us-west-2.amazonaws.com/portfolio.ajawad/treeML/flight-result.png",
     },
-
     {
-      title: "Discovering remote code execution (RCE) bugs in Wifi/Bluetooth combo firmware",
-      href: "https://github.com/akibjawad/frankenstein-report",
-      dates: "Sep 2021 - Dec 2021",
+      title: "Full Stack Project Management Website",
+      href: "https://llm.report",
+      dates: "Jul 2024 - Jul 2024",
       active: false,
       description:
-        `Broadcom Wifi/Bluetooth combo chip is used in many smartphones and laptops including iPhones, Samsung phones, and Macbooks.
-        In this project, I emulated the firmware of the combo chip using qemu and fuzzed the firmware with randomly generated bluetooth packets.
-        During fuzzing I found 2 CVEs: one crashing the firmware and another creating heap corruption error.
+        `Developed a Full-stack (front-end: React, Backend: Django) website with complete authentication and deployed it in AWS with apropriate scalability.
         `,
       technologies: [
-        "QEMU",
-        "Wireless Firmware Fuzzing",
-        "Linux Bluetooth Stack",
+        "React.js",
+        "Django",
+        "PostgreSQL",
+        "Nginx",
+        "AWS EC2",
+        "AWS S3",
       ],
       links: [
         {
           type: "Source",
-          href: "https://github.com/akibjawad/predict-flight-landing",
+          href: "https://github.com/akibjawad/django-react",
           icon: <Icons.github className="size-3" />,
         },
-        {
-          type: "Project Report",
-          href: "https://s3.us-west-2.amazonaws.com/portfolio.ajawad/firmware-fuzzing/main.pdf",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Slide Deck",
-          href: "https://s3.us-west-2.amazonaws.com/portfolio.ajawad/firmware-fuzzing/Project-Proposal-Frankenstein.pptx",
-          icon: <Icons.globe className="size-3" />
-        }
       ],
-      image: "https://s3.us-west-2.amazonaws.com/portfolio.ajawad/firmware-fuzzing/firm-fuzz.png",
+      image: "https://s3.us-west-2.amazonaws.com/portfolio.ajawad/react-django/dep-arch.png",
     },
   ],
   hackathons: [],
