@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, icons, NotebookIcon } from "lucide-react";
+import { FolderIcon, GraduationCapIcon, BriefcaseIcon, HomeIcon, icons, UserIcon, CodeIcon, GitBranchIcon, FolderGitIcon, FileTextIcon} from "lucide-react";
 import { title } from "process";
 
 export const DATA = {
@@ -26,6 +26,13 @@ export const DATA = {
   skills: [], //take skills from skillmap.tsx
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
+    { href: "/#about", icon: UserIcon, label: "About" },
+    { href: "/#work", icon: BriefcaseIcon, label: "Work" },
+    { href: "/#education", icon: GraduationCapIcon, label: "Education" },
+    { href: "/#skills", icon: CodeIcon, label: "Skills" },
+    { href: "/#open-source", icon: GitBranchIcon, label: "Open Source" },
+    { href: "/#projects", icon: FolderGitIcon, label: "Projects" },
+    { href: "/#acomplishments", icon: FileTextIcon, label: "Publications" },
     // { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
