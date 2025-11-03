@@ -432,7 +432,7 @@ export const DATA = {
     {
       "title":"Google Cloud Research Credit",
       "dates": "Nov 2025",
-      "description":`Received Goolge Cloud Research Credit for my project (with Dr.Ashikuzzaman) on developing state of the art LLMs and VLMs for medical imaging`,
+      "description":`Received Google Cloud Research Credit for my project (with Dr.Ashikuzzaman) on developing state of the art LLMs and VLMs for medical imaging`,
       "image":"/supercloud.png",
       "links":[
         {
@@ -444,6 +444,11 @@ export const DATA = {
           title:"Google Cloud Research Program",
           icon:<Icons.globe className="size-3"/>,
           href:"https://cloud.google.com/edu/researchers?hl=en"
+        },
+        {
+          title:"Associated Faculty: Dr. Ashikuzzaman",
+          icon:<Icons.globe className="size-3"/>,
+          href:"https://sse.umkc.edu/profiles/ashikuzzaman-md.html"
         }
       ]
     },
