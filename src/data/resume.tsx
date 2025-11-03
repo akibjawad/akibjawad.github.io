@@ -430,11 +430,29 @@ export const DATA = {
   hackathons: [],
   awards: [
     {
+      "title":"Google Cloud Research Credit",
+      "dates": "Nov 2025",
+      "description":`Received Goolge Cloud Research Credit for my project (with Dr.Ashikuzzaman) on developing state of the art LLMs and VLMs for medical imaging`,
+      "image":"/supercloud.png",
+      "links":[
+        {
+          title:"LinkedIn",
+          icon:<Icons.linkedin className="size-3"/>,
+          href:"https://www.linkedin.com/posts/md-ashikuzzaman-_googlecloud-researchcredits-medicalimaging-activity-7387303016455933952-lM_z?utm_source=share&utm_medium=member_desktop&rcm=ACoAACVbOdUBL54VTHvTkAeZ6atZvjyelwDQfrs"
+        },
+        {
+          title:"Google Cloud Research Program",
+          icon:<Icons.globe className="size-3"/>,
+          href:"https://cloud.google.com/edu/researchers?hl=en"
+        }
+      ]
+    },
+    {
       "title":"SRBD Icon of the Month",
       "dates": "JUN 2020",
       "description":`Awarded for identifying and resolving a concurrency issue
       in the Samsung Heartwise mobile (both iOS and Android) Application.`,
-      "image":"#",
+      "image":"sr.jpeg",
       "links":[]
     },
     {
@@ -442,7 +460,7 @@ export const DATA = {
       "description": `Awarded for presenting my research on IoT security at
       ECS Research Day, Syracuse University`,
       "dates":"MAR 2023",
-      "image":"https://s3.us-west-2.amazonaws.com/portfolio.ajawad/awards/ecs.png",
+      "image":"su.jpeg", //"https://s3.us-west-2.amazonaws.com/portfolio.ajawad/awards/ecs.png",
       "links":[
         {
           title:"ECS Research Day 2023 Awards",
@@ -456,7 +474,7 @@ export const DATA = {
       "description": `Awarded student travel grant to present my research on IoT security at the
       IEEE Conference on Communication and Security(CNS) at FL,USA.`,
       "dates": "OCT 2023",
-      "image":"#",
+      "image":"/nsf.png",
       "links":[]
     }
   ],
