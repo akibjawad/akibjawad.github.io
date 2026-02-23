@@ -21,7 +21,7 @@ export const DATA = {
     My security research has been published in IEEE CNS, and SecDev, and one of my poster is also published at USENIX security.
     Recently, I completed Masters in Computer Science from Syracuse University in New York.
     Before Syracuse University, I worked at Samsung Research.`,
-  avatarUrl: "https://s3.us-west-2.amazonaws.com/portfolio.ajawad/portrait.jpg",
+  avatarUrl: "https://s3.us-west-2.amazonaws.com/portfolio.ajawad/portrait.jpg?v=2",
   bibfile: "/ref.bib",
   skills: [], //take skills from skillmap.tsx
   navbar: [
