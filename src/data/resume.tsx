@@ -69,6 +69,20 @@ export const DATA = {
 
   work: [
     {
+      company: "Techleap Systems",
+      href: "https://techleapsystems.us",
+      badges: ["Agentic AI", "Computer Use Agents"],
+      location: "Irving, TX, USA",
+      title: "Software Engineer",
+      logoUrl: "/tls.png",
+      start: "Jul 2025",
+      end: "Current",
+      description:
+        `I was responsible for developing Agentic AI application for hospital information management system.
+        In parallel, I developed core infrastructure for computer use agent inclduing screen capture and keyboard-mouse controller module.
+        `,
+    },
+    {
       company: "TechX Labs",
       href: "https://techx.dev",
       badges: ["Open Source Contribution", "Hugging Face Transformers"],
@@ -76,7 +90,7 @@ export const DATA = {
       title: "AI/ML Engineer",
       logoUrl: "/techx.png",
       start: "May 2025",
-      end: "Aug 2025",
+      end: "July 2025",
       description:
         `I contributed to the multi-modal chat_template processing pipeline and video pre-processing pipeline of the Hugging Face Transformers library.
         I also contributed to the test-suite of Vision Language Models (VLMs) including InternVL, QWEN2 family of VLMs.
