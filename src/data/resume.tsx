@@ -288,6 +288,18 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Computer Use Agent",
+      href: "https://s3.us-west-2.amazonaws.com/portfolio.ajawad/computer-use/computer-use.png",
+      dates: "Oct 2025 - Dec 2025",
+      active: true,
+      description: `Developed core infrastructure (screen capture and actuator module) for computer use agents.
+      Screen capture module enables AI to observe user's screen and actuator module enables AI to control user's keyboard and mouse to complete part of user's workflow.
+      `,
+      technologies: ["PyObjC Framework", "MacOS Qwartz", "OpenAI API"],
+      image:"https://s3.us-west-2.amazonaws.com/portfolio.ajawad/computer-use/computer-use.png",
+      links: [],
+    },
+    {
       title: "Breaking circuit breakers",
       href: "https://github.com/akibjawad/circuit-breakers",
       dates: "Nov 2024 - Jan 2025",
