@@ -30,7 +30,7 @@ export const DATA = {
     { href: "#work", icon: Icons.briefcase, label: "Work" },
     { href: "#education", icon: Icons.graduationCap, label: "Education" },
     { href: "#skills", icon: Icons.code, label: "Skills" },
-    { href: "#OSS", icon: Icons.gitBranch, label: "Open Source" },
+    { href: "#open-source", icon: Icons.gitBranch, label: "OSS" },
     { href: "#projects", icon: Icons.folder, label: "Projects" },
     { href: "#acomplishments", icon: Icons.fileText, label: "Publications" },
     { href: "#award", icon: Icons.trophy, label: "Awards" },
