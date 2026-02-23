@@ -26,14 +26,15 @@ export const DATA = {
   skills: [], //take skills from skillmap.tsx
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
-    // { href: "/#about", icon: UserIcon, label: "About" },
-    { href: "/#work", icon: BriefcaseIcon, label: "Work" },
-    { href: "/#education", icon: GraduationCapIcon, label: "Education" },
-    { href: "/#skills", icon: CodeIcon, label: "Skills" },
-    { href: "/#open-source", icon: GitBranchIcon, label: "OSS" },
-    { href: "/#projects", icon: FolderGitIcon, label: "Projects" },
-    { href: "/#acomplishments", icon: TrophyIcon, label: "Honors" },
-    // { href: "/blog", icon: NotebookIcon, label: "Blog" },
+    { href: "#about", icon: Icons.user, label: "About" },
+    { href: "#work", icon: Icons.briefcase, label: "Work" },
+    { href: "#education", icon: Icons.graduationCap, label: "Education" },
+    { href: "#skills", icon: Icons.code, label: "Skills" },
+    { href: "#open-source", icon: Icons.gitBranch, label: "Open Source" },
+    { href: "#projects", icon: Icons.folder, label: "Projects" },
+    { href: "#acomplishments", icon: Icons.fileText, label: "Publications" },
+    { href: "#award", icon: Icons.trophy, label: "Awards" },
+    { href: "#contact", icon: Icons.email, label: "Contact" },
   ],
   contact: {
     email: "a.j.nafis@gmail.com",
@@ -52,12 +53,17 @@ export const DATA = {
         navbar: true,
       },
       email: {
-        name: "Send Email",
-        url: "#",
+        name: "Email",
+        url: "a.j.nafis@gmail.com",
         icon: Icons.email,
-
         navbar: false,
       },
+      google: {
+        name:"Google Scholar",
+        url:"https://scholar.google.com/citations?user=j48ym2MAAAAJ&hl=en",
+        icon: Icons.scholar,
+        navbar: false
+      }
     },
   },
 
@@ -429,6 +435,30 @@ export const DATA = {
   ],
   hackathons: [],
   awards: [
+    {
+      "title":"Nvidia Academic Grant Program",
+      "dates": "Dec 2025",
+      "description":`Received 32000hr (worthy of 300k USD) of 8 Nvidia A100 GPU cluster for my project (with Dr.Ashikuzzaman) on developing state of the art LLMs and VLMs for medical imaging`,
+      "image":"/nvidia-white-text.png",
+      "imageBg":"black",
+      "links":[
+        {
+          title:"Awad News",
+          icon:<Icons.globe className="size-3"/>,
+          href:"https://research.umkc.edu/mighty-lab/news/mighty-lab-receives-nvidia-academic-research-grant"
+        },
+        {
+          title:"Nvidia Academic Grant Program",
+          icon:<Icons.globe className="size-3"/>,
+          href:"https://www.nvidia.com/en-us/industries/higher-education-research/academic-grant-program/"
+        },
+        {
+          title:"Associated Faculty: Dr. Ashikuzzaman",
+          icon:<Icons.globe className="size-3"/>,
+          href:"https://sse.umkc.edu/profiles/ashikuzzaman-md.html"
+        }
+      ]
+    },
     {
       "title":"Google Cloud Research Credit",
       "dates": "Nov 2025",

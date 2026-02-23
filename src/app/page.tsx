@@ -217,7 +217,7 @@ export default function Page() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-2xl font-bold">
-                  Publications
+                  Publications and Patents
                 </div>
               </div>
             </div>
@@ -250,6 +250,7 @@ export default function Page() {
                     description={award.description}
                     dates={award.dates}
                     image={award.image? award.image :"#"}
+                    imageBg={"imageBg" in award ? (award as any).imageBg : undefined}
                     links={award.links? award.links :[]}
                   />
                 </BlurFade>
@@ -279,7 +280,11 @@ export default function Page() {
                 <Link href={"mailto:a.j.nafis@gmail.com"} target="_blank">
                   <Icons.email className="size-12"/>
                 </Link>
-                
+
+                <Link href={"https://scholar.google.com/citations?user=j48ym2MAAAAJ&hl=en"} target="_blank">
+                  <Icons.scholar className="size-12"/>
+                </Link>
+
               </div>
             </div>
           </BlurFade>
