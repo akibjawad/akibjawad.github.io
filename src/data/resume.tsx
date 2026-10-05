@@ -9,7 +9,7 @@ export const DATA = {
   location: "San Francisco, CA",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "Systems software engineer. I build the infrastructure that trains and serves AI, and find where it breaks.",
+    "I build system software to train and serve AI, and enjoy attacking software and AI.",
   summary:
   `I write systems software, and for the last few years the system has been AI. At [Polymath](https://polymathlabs.ai) I build RL environments that find where coding agents fail, and run the LLM inference platform (vLLM, Ray, LiteLLM) used to train and evaluate them. I added in-memory video support to [Hugging Face Transformers](https://github.com/huggingface/transformers/pull/39494) and built screen-capture and input-injection subsystems for computer-use agents.
 
