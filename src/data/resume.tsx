@@ -112,7 +112,7 @@ export const DATA = {
       href: "https://www.syracuse.edu",
       badges: ["AI Safety", "Network Security", "Distributed Systems"],
       location: "Syracuse, NY, USA",
-      title: "Systems and Security Researcher: Networking, AI, IoT",
+      title: "Systems and Security Researcher",
       logoUrl: "/su.jpeg",
       start: "August 2021",
       end: "May 2025",
