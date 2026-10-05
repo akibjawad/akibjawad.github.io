@@ -69,17 +69,33 @@ export const DATA = {
 
   work: [
     {
-      company: "Techleap Systems",
-      href: "https://techleapsystems.us",
-      badges: ["Agentic AI", "Computer Use Agents"],
-      location: "Irving, TX, USA",
-      title: "Software Engineer",
-      logoUrl: "/tls.png",
-      start: "Jul 2025",
+      company: "Polymath AI Labs (YC W26)",
+      href: "https://polymathlabs.ai",
+      badges: ["Coding Agents", "RL Environments", "LLM Inference"],
+      location: "San Francisco, CA, USA",
+      title: "Research Software Engineer",
+      logoUrl: "/polymath_ai_labs.svg",
+      start: "July 2026",
       end: "Current",
       description:
-        `I was responsible for developing Agentic AI application for hospital information management system.
-        In parallel, I developed core infrastructure for computer use agent inclduing screen capture and keyboard-mouse controller module.
+        `I developed a self-managed LLM inference platform with OpenWebUI, LiteLLM, Ray, and vLLM for RL
+        training and evaluation of coding agents on inference engineering tasks.
+        I designed RL environments and tasks to discover where coding agents fail.
+        `,
+    },
+    {
+      company: "Stealth AI Startup",
+      href: "#",
+      badges: ["Agentic AI", "Computer Use Agents"],
+      location: "New York, NY, USA, Irving, TX, USA",
+      title: "Research Software Engineer",
+      logoUrl: "/stealth_startup.jpeg",
+      start: "July 2025",
+      end: "July 2026",
+      description:
+        `I developed core infrastructure for computer-use agent including screen capture and keyboard-mouse controller module.
+        Received 1M USD for developing world models for medical imaging through NVIDIA Academic Grant Program.
+        In parallel, I was responsible for developing an Agentic AI application for hospital information management system.
         `,
     },
     {
@@ -87,62 +103,28 @@ export const DATA = {
       href: "https://techx.dev",
       badges: ["Open Source Contribution", "Hugging Face Transformers"],
       location: "Jersey City, NJ, USA",
-      title: "AI/ML Engineer",
+      title: "AI/ML Engineer Intern",
       logoUrl: "/techx.png",
       start: "May 2025",
       end: "July 2025",
       description:
         `I contributed to the multi-modal chat_template processing pipeline and video pre-processing pipeline of the Hugging Face Transformers library.
-        I also contributed to the test-suite of Vision Language Models (VLMs) including InternVL, QWEN2 family of VLMs.
+        I also contributed to the test-suite of Vision Language Models (VLMs) including the InternVL, Qwen 2 family of VLMs.
         `,
     },
     {
       company: "Syracuse University",
       href: "https://www.syracuse.edu",
-      badges: ["LLM Security", "AI safety"],
+      badges: ["AI Safety", "Network Security", "Distributed Systems"],
       location: "Syracuse, NY, USA",
-      title: "Research Intern",
+      title: "Systems and Security Researcher: Networking, AI, IoT",
       logoUrl: "/su.jpeg",
-      start: "Nov 2024",
-      end: "July 2025",
+      start: "August 2021",
+      end: "May 2025",
       description:
-        `My primary contribution can be summarized by the phrase \"researching explainablity and security of LLMs\".
-        I worked on representation engineering, a method to observe and control behavior of LLMs as they generate responses.
-        Using representation engineering, my goal was to reduce harmfull response generation of LLMs by finetuning foundational LLMs such as Mistral, and Lamma.
-        `,
-    },
-    {
-      company: "Syracuse University",
-      href: "https://www.syracuse.edu",
-      badges: ["Network Security", "Distributed Systems"],
-      location: "Syracuse, NY, USA",
-      title: "Graduate Research Assistant",
-      logoUrl: "/su.jpeg",
-      start: "Aug 2021",
-      end: "May 2024",
-      description:
-        `My primary contribution can be summarized by the phrase \"researching security of networked systems\".
-        A candidate networked system for my research was IoT systems, more specifically smart home/manufacturing systems.
-        I developed a framework, dubbed VetIoT, to automatically test efficacy of security solutions proposed for IoT systems.
-        Furthermore, I conducted security analysis of networking subsystem of Linux kernel.
-        I created a framework to emulate software defined networking (SDN) using containers.
-        I replicated various attacks on layer-2 (Mac), layer-3 (IP), and layer-4 (TCP) protocols.
-        Implemented data leak attacks aginst VPN client applications (Nord, Keepsolid etc.) and built-in vpn configurators on iOS, Android, Mac, and Windows.
-        As a fun project, I also developed kernel modules to create my own firewall based on linux netfilter hooks.`,
-    },
-    {
-      company: "Syracuse University",
-      badges: ["Operating Systems"],
-      href: "https://www.syracuse.edu",
-      location: "Syracuse, NY, USA",
-      title: "Graduate Teaching Assistant",
-      logoUrl: "/su.jpeg",
-      start: "Aug 2022",
-      end: "May 2024",
-      description:
-        `I tutored fundamental concepts of operating systems (OS) such process handling, system call, multi-processing to both undergraduate and graduate students.
-        To teach these concepts in a hands-on manner, I utilized an educational operating system called NachOS.
-        I also built scripts to automatically validate (grade) students implementation of OS concepts in NachOS.  
+        `AI Safety and Security Research: Representation engineering, preventing harmful information generation, embedding space attacks, and prompt injection attacks.
+        Networking and IoT Security: Automating IoT security testing, security testing of the networking subsystem of Linux, and distributed systems.
+        Operating Systems: Teaching system call implementation, cross-compilation, and mentoring NSF REU students.
         `,
     },
     {
@@ -150,17 +132,17 @@ export const DATA = {
       href: "https://research.samsung.com/srbd",
       badges: ["iOS & Android Development", "Embedded Linux"],
       location: "Dhaka, Bangladesh",
-      title: "Software Engineer",
+      title: "System Software Engineer",
       logoUrl: "/sr.jpeg",
       start: "May 2019",
-      end: "Aug 2021",
+      end: "August 2021",
       description:
         `
         My primary contribution was developing a software update mechanism for smartwatches using internet from the companion smartphone application.
         For this feature, I developed a custom Bluetooth Low Energy (BLE) transport protocol to transfer the watch software, from the smartphone to watch, over BLE.
-        I implmeneted this feature on both iOS and Android version of Samsung Heartwise project.
+        I implemented this feature on both iOS and Android versions of Samsung Heartwise project.
         Moreover, I developed custom file-logging libraries, on both iOS and Android, to aid developers and testers in tracking software issues.
-        Apart from mobile application development, I developed remote procedure call (rpc) mechanism on tizen (an embedded linux) OS. 
+        Apart from mobile application development, I developed remote procedure call (RPC) mechanism on Tizen (an embedded Linux) OS. 
         `,
     },
     
@@ -464,7 +446,7 @@ export const DATA = {
     {
       "title":"Nvidia Academic Grant Program",
       "dates": "Dec 2025",
-      "description":`Received 32000hr (worthy of 300k USD) of 8 Nvidia A100 GPU cluster for my project (with Dr.Ashikuzzaman) on developing state of the art LLMs and VLMs for medical imaging`,
+      "description":`Received 32000hr (worthy of 1M USD) of 8 Nvidia A100 GPU cluster for my project (with Dr.Ashikuzzaman) on developing state of the art LLMs and VLMs for medical imaging`,
       "image":"/nvidia-white-text.png",
       "imageBg":"black",
       "links":[
