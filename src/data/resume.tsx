@@ -6,21 +6,16 @@ export const DATA = {
   name: "Akib Jawad Nafis",
   initials: "AJN",
   url: "https://akibjawad.github.io",
-  location: "Syracuse, NY",
+  location: "San Francisco, CA",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "A versatile software engineer, researcher, and passionate debugger with a hint of depth and details.",
+    "Systems software engineer. I build the infrastructure that trains and serves AI, and find where it breaks.",
   summary:
-    `I developed both user facing applications and libraries that are used by other developers.
-    Up until now, I contributed to the Hugging Face Transformers Library,
-    developed Bluetooth Low Energy (BLE) protocols to speed up communication between smartwatches and smartphones,
-    and developed Python Library to test security solutions for IoT systems (or any distributed systems using security policy enforcement).
-    Working at library layers made me adaptable to work with any programming language or framework swiftly and create tangible impact.
-    Additionally, I developed a strong interest in digging deep into the system layer and find vulnerabilities in the system.
-    I have worked extensively in the networking subsystem of Linux, AI/ML systems, distributed systems with a focus on safety and security.
-    My security research has been published in IEEE CNS, and SecDev, and one of my poster is also published at USENIX security.
-    Recently, I completed Masters in Computer Science from Syracuse University in New York.
-    Before Syracuse University, I worked at Samsung Research.`,
+  `I write systems software, and for the last few years the system has been AI. At [Polymath](https://polymathlabs.ai) I build RL environments that find where coding agents fail, and run the LLM inference platform (vLLM, Ray, LiteLLM) used to train and evaluate them. I added in-memory video support to [Hugging Face Transformers](https://github.com/huggingface/transformers/pull/39494) and built screen-capture and input-injection subsystems for computer-use agents.
+
+  The habit of working one layer below the API is older than that. At Samsung Research I designed a Bluetooth Low Energy transport protocol and over-the-air updates for smartwatches. At Syracuse University I fuzzed Wi-Fi/Bluetooth firmware under QEMU, emulated software-defined networks, attacked VPN tunnels and the Linux networking stack, and researched IoT and LLM security, with papers at IEEE CNS and SecDev and a poster at USENIX Security.
+
+  I'm most useful where the model meets the machine: the infrastructure that trains and serves it, and the tests and attacks that find where it breaks.`,
   avatarUrl: "https://s3.us-west-2.amazonaws.com/portfolio.ajawad/portrait.jpg?v=2",
   bibfile: "/ref.bib",
   skills: [], //take skills from skillmap.tsx
