@@ -89,7 +89,7 @@ export const DATA = {
       end: "July 2026",
       description:
         `I developed core infrastructure for computer-use agent including screen capture and keyboard-mouse controller module.
-        Received 1M USD for developing LLMs and VLMs for medical imaging through NVIDIA Academic Grant Program.
+        Received compute grant worth 1M USD for developing LLMs and VLMs for medical imaging through NVIDIA Academic Grant Program.
         In parallel, I was responsible for developing an Agentic AI application for hospital information management system.
         `,
     },
